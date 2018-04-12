@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.containerAbout {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.profilePic>img {
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+  /* padding: 0;
+  box-shadow: 5px 10px 18px #1a1a00; */
+}
+
+.ader {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ader:hover {
+  display: inline-block;
+  animation-iteration-count: infinite;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #313131;
+  font-weight: bold;
+  position: relative;
+  animation: colorchange 20s infinite alternate;
+}
+
+@keyframes colorchange {
+  0% {
+    color: #8e44ad;
+  }
+  10% {
+    color: turquoise;
+  }
+  20% {
+    color: #1abc9c;
+  }
+  30% {
+    color: #d35400;
+  }
+  40% {
+    color: grey;
+  }
+  50% {
+    color: #34495e;
+  }
+  60% {
+    color: orange;
+  }
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+  90% {
+    color: #2980b9;
+  }
+  100% {
+    color: pink;
+  }
+}
+
+.aboutText {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.aboutText img {
+  width: 20px;
+  height: 20px;
+}
+
+.aboutText {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .ader {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    width: calc(100% - 40px);
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutText .logos .containerAbout {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .ader {
+    width: calc(50% - 40px);
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .aboutText .logos .profilePic .containerAbout {
+    width: calc(50% - 40px);
+    height: auto;
+  }
+}
+
+@media (min-width:901px) {
+  .aboutText .logos .profilePic .containerAbout {
+    width: calc(33% - 40px);
+  }
+}

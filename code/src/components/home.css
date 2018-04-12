@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #005266;
+}
+
+.homeWelcome {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  font-size: 150px;
+  color: white;
+  width: 100%;
+}
+
+.homeWelcome:hover {
+  display: inline-block;
+  animation-iteration-count: infinite;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #313131;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: colorchange 20s infinite alternate;
+}
+
+@keyframes colorchange {
+  0% {
+    color: #8e44ad;
+  }
+  10% {
+    color: turquoise;
+  }
+  20% {
+    color: #1abc9c;
+  }
+  30% {
+    color: #d35400;
+  }
+  40% {
+    color: grey;
+  }
+  50% {
+    color: #34495e;
+  }
+  60% {
+    color: orange;
+  }
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+  90% {
+    color: #2980b9;
+  }
+  100% {
+    color: pink;
+  }
+}
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  width: 33%;
+  height: auto;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.box>img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+
+.homeEmail {
+color: white;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px) {
+  .homeWelcome {
+    font-size: 85px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .box {
+    width: calc(100% - 30px);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .container .box {
+    width: calc(50% - 40px);
+    height: auto;
+  }
+}
+
+@media (min-width:901px) {
+  .container .box {
+    width: calc(33% - 40px);
+  }
+}
